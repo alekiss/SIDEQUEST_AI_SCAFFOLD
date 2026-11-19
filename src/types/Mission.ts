@@ -1,6 +1,14 @@
 export type Mood = 'Animado' | 'Tranquilo' | 'Cansado' | 'Desafiado';
+
 export type Energy = 'Baixa' | 'Média' | 'Alta';
-export type MissionCategory = 'Exploração' | 'Criatividade' | 'Social' | 'Bem-estar';
+
+export type MissionCategory =
+  | 'Exploração'
+  | 'Criatividade'
+  | 'Social'
+  | 'Desafio pessoal';
+
+export type MissionDifficulty = 'Fácil' | 'Média' | 'Desafiadora';
 
 export type Mission = {
   id: string;
@@ -8,7 +16,7 @@ export type Mission = {
   description: string;
   category: MissionCategory;
   durationMinutes: number;
-  difficulty: 'Fácil' | 'Média' | 'Desafiadora';
+  difficulty: MissionDifficulty;
   xp: number;
   steps: string[];
   completed?: boolean;
