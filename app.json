@@ -1,0 +1,33 @@
+
+{
+  "expo": {
+    "name": "SideQuest AI",
+    "slug": "sidequest-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#090B1D"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#090B1D"
+      },
+      "package": "com.example.sidequestai"
+    },
+    "newArchEnabled": true,
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    }
+  }
+}
